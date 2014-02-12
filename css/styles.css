@@ -1,0 +1,433 @@
+/* Color scheme
+Hazy lilac: 966F9B;
+Candy pink: E07CCB;
+Dusty mauve: 914B71;
+Rich teal: 25554F;
+Easter green: 72D190;
+*/
+
+/* Reset --------------------------------------------------------------------------------------- */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* /Reset -------------------------------------------------------------------------------------- */
+
+/* Elements ------------------------------------------------------------------------------------ */
+
+body {
+	background-color: black;
+	background-image:
+		-webkit-radial-gradient(circle contain, rgba(150, 111, 195, 0.1) 36px,	rgba(150, 111, 195, 0.15) 38px,	transparent 40px),
+		-webkit-radial-gradient(circle contain, rgba(224, 124, 203, 0.1) 16px,	rgba(224, 124, 203, 0.15) 17px,	transparent 20px),
+		-webkit-radial-gradient(circle contain, rgba(224, 124, 203, 0.1) 32px,	rgba(224, 124, 203, 0.15) 34px,	transparent 40px),
+		-webkit-radial-gradient(circle contain, rgba(145, 75, 113, 0.1) 76px,		rgba(145, 75, 113, 0.15) 82px,	transparent 92px),
+		-webkit-radial-gradient(circle contain, rgba(145, 75, 113, 0) 80px,			rgba(145, 75, 113, 0.1) 152px,	transparent 380px),
+		-webkit-radial-gradient(circle contain, rgba(145, 75, 113, 0) 60px,			rgba(145, 75, 113, 0.1) 120px,	transparent 180px),
+		-webkit-radial-gradient(circle contain, rgba(37, 85, 79, 0.1) 60px,			rgba(37, 85, 79, 0.15) 68px,		transparent 100px),
+		-webkit-radial-gradient(circle contain, rgba(37, 85, 79, 0.1) 32px,			rgba(37, 85, 79, 0.15) 34px,		transparent 40px),
+		-webkit-radial-gradient(circle contain, rgba(37, 85, 79, 0.1) 26px,			rgba(37, 85, 79, 0.15) 27px,		transparent 30px),
+		-webkit-radial-gradient(circle contain, rgba(37, 85, 79, 0.1) 36px,			rgba(37, 85, 79, 0.15) 37px,		transparent 40px),
+		-webkit-radial-gradient(circle contain, rgba(114, 209, 244, 0.05) 60px, rgba(114, 209, 244, 0.05) 68px,	transparent 100px),
+		-webkit-radial-gradient(circle contain, rgba(114, 209, 244, 0.1) 48px, 	rgba(114, 209, 244, 0.15) 51px,	transparent 60px),
+		-webkit-radial-gradient(circle contain, rgba(114, 209, 244, 0.1) 52px, 	rgba(114, 209, 244, 0.15) 54px,	transparent 60px),
+		-webkit-radial-gradient(circle contain, rgba(114, 209, 244, 0.1) 36px, 	rgba(114, 209, 244, 0.15) 37px,	transparent 40px);
+	background-position: 30px 0, 280px 360px, 20px 60px, 300px 450px, 20px 220px, 450px 400px, 60px 140px, 380px 200px, 80px 80px, 260px 330px, 180px 110px, 580px 450px, 180px 140px, 480px 380px;
+	background-size: 600px 600px;
+	color: white;
+	font-family: 'Quattrocento Sans', sans-serif;
+	font-size: 18px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	line-height: 1.167;
+	margin: 1.5em 0 0.667em;
+	text-align: center;
+}
+
+h1 {
+	font-size: 2.625em;
+}
+
+h2 {
+	font-size: 2.25em;
+}
+
+h3 {
+	font-size: 1.75em;
+}
+
+h4 {
+	font-size: 1.5em;
+}
+
+h5 {
+	font-size: 1.167em;
+}
+
+/* /Elements ----------------------------------------------------------------------------------- */
+
+/* Photo Grid ---------------------------------------------------------------------------------- */
+
+.photo-grid {
+	margin: 1em auto;
+	max-width: 1106px;
+	text-align: center;
+}
+
+.photo-grid li {
+	border: 5px solid white;
+	display: inline-block;
+	margin: 1em;
+	transition: all 500ms;
+	width: 289px;
+}
+
+.photo-grid img {
+	display: block;
+	height: auto;
+	transition: all 300ms;
+	max-width: 100%;
+}
+
+.photo-grid li:hover img {
+	-webkit-transform: scale(1.4);
+}
+
+.photo-grid figure {
+	height: 163px;
+	overflow: hidden;
+	position: relative;
+	width: 289px;
+}
+
+.photo-grid figcaption {
+	background: rgba(0,0,0,0.8);
+	color: white;
+	display: table;
+	height: 100%;
+	left: 0;
+	opacity: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+	transition: all 300ms;
+	transition-delay: 100ms;
+	z-index: 100;
+}
+
+.photo-grid li:hover figcaption {
+	opacity: 1;
+}
+
+.photo-grid figcaption p {
+	display: table-cell;
+	font-size: 1.5em;
+	position: relative;
+	top: -40px;
+	width: 289px;
+	transition: all 300ms ease-out;
+	vertical-align: middle;
+}
+
+.photo-grid li:hover figcaption p {
+	-webkit-transform: translateY(40px);
+}
+
+/* Alter scale of selected items */
+.photo-grid.selected li {
+	opacity: 0.2;
+	-webkit-transform: scale(0.5);
+}
+
+.photo-grid.selected li.selected {
+	opacity: 1.0;
+	-webkit-transform: scale(1.1);
+}
+
+
+/* /Photo Grid --------------------------------------------------------------------------------- */
+
+/* Filter Nav ---------------------------------------------------------------------------------- */
+
+#filter {
+	display: table;
+	margin: 2.531em auto;
+	text-align: center;
+}
+
+#filter ul {
+	display: table-row;
+}
+
+#filter li {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+#filter a {
+	background: #914b71;
+	border-left: 1px solid #a75782;
+	border-right: 1px solid #7b3f60;
+	box-shadow: inset 0 0 10px #7b3f60;
+	color: white;
+	display: block;
+	padding: 0.75em 1.688em;
+	text-decoration: none;
+	transition: all 500ms;
+}
+
+#filter a:hover {
+	background: #864568;
+}
+
+#filter a.selected {
+	background: #49a89c;
+	box-shadow: inset 0 0 5px #3f9086;
+}
+
+#filter a.selected:hover {
+	background: #449c91;
+}
+
+#filter li:first-child a {
+	border-left: 0 none;
+	border-radius: 3px 0 0 3px;
+}
+
+#filter li:last-child a {
+	border-right: 0 none;
+	border-radius: 0 3px 3px 0;
+}
+
+/* /Filter Nav --------------------------------------------------------------------------------- */
+
+/* Tab Sections -------------------------------------------------------------------------------- */
+
+.tab-section {
+	margin: 0 auto;
+	max-width: 35em;
+}
+
+section {
+	border-bottom: 1px dotted #e07ccb;
+	padding: 1em 0;
+}
+
+section h1 {
+	border-bottom: 10px solid #e07ccb;
+	text-align: left;
+}
+
+section p {
+	line-height: 1.5;
+	margin: 0 0 1.5em 0;
+}
+
+section a {
+	color: #e07ccb;
+}
+
+.tabs-active {
+	position: relative;
+}
+
+.tabs-active section {
+	background: rgba(255,255,255,0.1);
+	border: 1px solid #72d190;
+	border-top-color: #e07ccb;
+	box-sizing: border-box;
+	margin-top: 0;
+	padding: 1em 2em;
+	position: absolute;
+}
+
+.tabs-active section h1 {
+	margin-top: 0.5em;
+}
+
+/* /Tab Section -------------------------------------------------------------------------------- */
+
+/* Tabs ---------------------------------------------------------------------------------------- */
+
+.tabs:after {
+	clear: both;
+	content: '';
+	display: table;
+}
+
+.tabs li {
+	float: left;
+}
+
+.tabs a {
+	background: #58c97c;
+	border-radius: 5px 5px 0 0;
+	box-shadow: 2px 0 2px rgba(0,0,0,0.2), -2px 0 2px rgba(0,0,0,0.2);
+	color: #2a8045;
+	display: block;
+	font-weight: bold;
+	padding: 0.75em 1.688em;
+	position: relative;
+	text-decoration: none;
+	text-shadow: 1px 1px 1px rgba(255,255,255,0.5);
+	text-transform: uppercase;
+	top: 0;
+	transition: background 300ms ease-in, top 300ms ease-in;
+}
+
+.tabs a:after {
+	border-bottom: 0 solid #58c97c;
+	content: '';
+	left: 0;
+	position: absolute;
+	top: 100%;
+	transition: border 300ms ease-in;
+	width: 100%;
+}
+
+.tabs a:hover {
+	background: #3bb461;
+	box-shadow: none;
+	color: #26733e;
+	top: -15px;
+}
+
+.tabs a:hover:after {
+	border-bottom-width: 15px;
+	border-color: #3bb461;
+}
+
+.tabs .active a {
+	background: #e38ad0;
+	color: #ac2990;
+}
+
+.tabs .active a:after {
+	border-color: #e38ad0;
+}
+
+.tabs .active a:hover {
+	background: #d653bb;
+	color: #902279;
+}
+
+.tabs .active a:hover:after {
+	border-color: #d653bb;
+}
+
+/* /Tabs --------------------------------------------------------------------------------------- */
+
+/* Clip Show ----------------------------------------------------------------------------------- */
+
+.clips {
+	background: rgba(255,255,255,0.1);
+	height: 768px;
+	margin: 2.25em auto;
+	overflow: hidden;
+	position: relative;
+	width: 1024px;
+}
+
+.single-clip {
+	background: 0 0 no-repeat;
+	background-size: cover;
+	cursor: pointer;
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	-webkit-transition: all 600ms;
+	width: 100%;
+	z-index: 1;
+}
+
+.single-clip img {
+	max-height: 100%;
+	max-width: 100%;
+}
+
+.arcdetriomphe {
+	clip: rect(440px 650px 590px 500px);
+}
+
+.eiffeltower {
+	clip: rect(0px 590px 150px 440px);
+}
+
+.greencupcakes {
+	clip: rect(90px 950px 240px 800px);
+}
+
+.notredame {
+	clip: rect(330px 720px 480px 570px);
+}
+
+.pinkflower {
+	clip: rect(320px 470px 470px 320px);
+}
+
+.purpleflower {
+	clip: rect(230px 200px 380px 50px);
+}
+
+.whitecupcakes {
+	clip: rect(480px 200px 630px 50px);
+}
+
+.yellowcupcakes {
+	clip: rect(300px 990px 450px 840px);
+}
+
+.yellowflower {
+	clip: rect(200px 610px 350px 460px);
+}
+
+.single-clip:hover {
+	clip: rect(0 1600px 1200px 0) !important;
+	cursor: pointer;
+	z-index: 2;
+}
+
+/* /Clip Show ---------------------------------------------------------------------------------- */
